@@ -111,6 +111,11 @@ module.exports = (env, argv) => {
         inject: 'body',
         filename: 'about',
       }),
+      new HtmlWebPackPlugin({
+        template: 'src/pages/contact-us.html',
+        inject: 'body',
+        filename: 'contact',
+      }),
       new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery',
