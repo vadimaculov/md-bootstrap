@@ -1,3 +1,41 @@
 .container-fluid {
     margin-top: 5rem;
 }
+
+.conteiner-hw20 {
+    background-color: rgb(160,130,130);
+    color: rgb(254,254,254);
+    height: 400px;
+    padding-top: 5rem;
+}
+
+.we-got {
+    text-align: center;
+    animation-name: blink-color;
+    animation-duration: initial;
+    animation-fill-mode: initial;
+    animation-delay: 1.5s;
+}
+
+@keyframes blink-color {
+    0% { color: rgb(254,254,254);}
+    100% { color: red;}
+}
+
+@keyframes left-center {
+    0% {
+      left: -100%
+    }
+
+    100% {
+      left: 0;
+    }
+}
+
+.centr-text {
+    left: -100%;
+    animation-name: left-center;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
