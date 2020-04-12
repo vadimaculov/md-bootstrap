@@ -1,0 +1,142 @@
+@keyframes blink-color {
+  0% {
+    color: rgb(254, 254, 254);
+  }
+
+  100% {
+    color: red;
+  }
+}
+
+@keyframes we-top {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 30px;
+  }
+}
+
+@keyframes left-center {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes btn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.conteiner-hw20 {
+  background-color: rgb(160, 130, 130);
+  color: rgb(254, 254, 254);
+  height: 400px;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.we-got {
+  position: relative;
+  animation: blink-color 200ms 1.5s infinite, we-top 4s forwards;
+}
+
+.centr-text {
+  position: relative;
+  left: -100%;
+  margin: 40px auto;
+  width: 500px;
+  animation-name: left-center;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.animated-btn {
+  margin: auto;
+  background-color: rgb(56, 16, 16);
+  color: white;
+  padding: 1rem 2rem;
+  border: #fff solid 1px;
+  opacity: 0;
+  animation: btn 4s 4s forwards;
+}
+
+// Best method by Vitalii
+//
+// @keyframes blink-red {
+//   from {
+//       color: white;
+//   }
+
+//   to {
+//       color: red;
+//   }
+// }
+
+// @keyframes heading {
+//   0% {
+//       top: -50px;
+//   }
+//   100% {
+//       top: 60px;
+//   }
+// }
+
+// @keyframes content {
+//   0% {
+//       left: -2000px;
+//   }
+//   100% {
+//       left: 0;
+//   }
+// }
+
+// @keyframes opacity-uprise {
+//   0% { opacity: 0; }
+//   100% { opacity: 1; }
+// }
+
+// .animated-section {
+//   height: 320px;
+//   margin: 0 auto;
+//   text-align: center;
+//   background-color: #a08383;
+//   color: white;
+
+//   h1 {
+//       width: 500px;
+//       position: relative;
+//       top: -100px;
+//       animation: heading 4s forwards, blink-red 200ms 4s infinite;
+//       margin: 0 auto;
+//   }
+
+//   p {
+//       width: 500px;
+//       position: relative;
+//       left: -2000px;
+//       animation: content 2s 2s forwards;
+//       margin: 60px auto 0;
+//   }
+
+//   .animated-btn {
+//       display: inline-block;
+//       background-color: rgb(56, 16, 16);
+//       color: white;
+//       text-decoration: none;
+//       padding: 1rem 2rem;
+//       border: #fff solid 1px;
+//       opacity: 0;
+//       animation: opacity-uprise 4s 4s forwards;
+//   }
+// }
