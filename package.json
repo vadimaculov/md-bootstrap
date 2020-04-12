@@ -46,6 +46,8 @@
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
+    "stylelint": "^13.3.2",
+    "stylelint-webpack-plugin": "^1.2.3",
     "terser-webpack-plugin": "^2.2.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
@@ -63,6 +65,8 @@
     "jquery": "^3.4.1",
     "mdbootstrap": "^4.10.0",
     "node-waves": "^0.7.6",
-    "popper.js": "^1.16.0"
+    "popper.js": "^1.16.0",
+    "postcss-loader": "^3.0.0",
+    "stylelint-config-standard": "^20.0.0"
   }
 }
